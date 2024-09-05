@@ -1,0 +1,6 @@
+*.cpp text
+*.h text
+*.txt text
+*.md text
+.* text
+*.png filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,26 @@
+Language: Cpp
+AccessModifierOffset: -4
+AlignAfterOpenBracket: DontAlign
+AllowShortCaseLabelsOnASingleLine: true
+AllowShortIfStatementsOnASingleLine: true
+AlwaysBreakTemplateDeclarations: Yes
+BraceWrapping:   
+  AfterFunction: true
+BreakBeforeBraces: Custom
+ColumnLimit: 0
+IncludeBlocks: Regroup
+IncludeCategories: 
+  - Regex:    '^<.*\.h>'
+    Priority: 2
+  - Regex:    '^<.*'
+    Priority: 3
+  - Regex:    '.*'
+    Priority: 1
+IndentCaseLabels: true
+IndentWidth: 4
+KeepEmptyLinesAtTheStartOfBlocks: false
+MaxEmptyLinesToKeep: 2
+NamespaceIndentation: All
+PointerAlignment: Left
+SpaceAfterCStyleCast: true
+SpacesBeforeTrailingComments: 2
