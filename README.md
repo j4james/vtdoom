@@ -48,6 +48,14 @@ and a C++ compiler supporting C++20 or later.
 [CMake]: https://cmake.org/
 
 
+See Also
+--------
+
+This project was inspired by [XtermDOOM].
+
+[XtermDOOM]: https://gitlab.com/AutumnMeowMeow/xtermdoom
+
+
 License
 -------
 
