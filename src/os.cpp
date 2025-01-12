@@ -19,6 +19,9 @@ os::os()
     HANDLE input_handle = GetStdHandle(STD_INPUT_HANDLE);
     GetConsoleMode(input_handle, &input_mode);
     SetConsoleMode(input_handle, input_mode & ~ENABLE_LINE_INPUT & ~ENABLE_ECHO_INPUT & ~ENABLE_PROCESSED_INPUT | ENABLE_VIRTUAL_TERMINAL_INPUT);
+    // We're trapping and ignoring Ctrl+Break events so the app doesn't abort
+    // with the terminal in an unusable state.
+    SetConsoleCtrlHandler([](DWORD) { return TRUE; }, TRUE);
 }
 
 os::~os()
